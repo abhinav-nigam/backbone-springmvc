@@ -1,10 +1,98 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>iReportCards</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>iReportCards</title>
+	<link rel="stylesheet" href="resources/css/app.css" type="text/css" media="screen" charset="utf-8"/>
+	<script type="text/javascript" src="resources/js/lib/JQuery.js"></script>
+	<script type="text/javascript" src="resources/js/lib/jquery.hoverIntent.minified.js"></script>
 </head>
 <body>
-Starting for Real !!!
+	<div id="header_wrap">
+		<div id="header">
+			<a href="index.html" ><img id="logo" src="resources/images/logo-1.gif" width="163" height="50" alt="iReportCards Logo"></a>
+			<div id="user_menus_wrap">
+				<div id="user_menus">
+					<a href="#" id="messages">
+						<span class="badge">5</span>
+						<img src="resources/images/message.png" alt="Messages icon" width="23" height="35" />
+					</a>
+					<a href="#" id="student">
+						<img id="photo" src="resources/images/student.jpeg" width="33" height="35" alt="Don Osborne">
+						<img src="resources/images/user_menus_arrow.png" width="9" height="6" alt="Down">
+					</a>
+				</div>
+				<div id="messages_tile" class="tile">
+					<a href="javascript:;" class="menu_row unread">
+						<img src="resources/images/student2.jpg" alt="student2" width="32" height="32" />
+						<span class="body">Hi, How're you doing</span>
+						<div class="clearer"></div>
+					</a>
+					<a href="javascript:;" class="menu_row unread">
+						<img src="resources/images/alert-icon.png" alt="alert" width="32" height="32" />
+						<span class="body">You got a class topper badge</span>
+						<div class="clearer"></div>
+					</a>
+					<a href="javascript:;" class="menu_row unread">
+						<img src="resources/images/teacher1.jpg" alt="teacher1" width="32" height="32" />
+						<span class="body">Congratulations on a great score in mid semester</span>
+						<div class="clearer"></div>
+					</a>
+					<a href="javascript:;" class="menu_row">
+						<img src="resources/images/alert-icon.png" alt="alert" width="32" height="32" />
+						<span class="body">You have a new study group request</span>
+						<div class="clearer"></div>
+					</a>
+					<a href="javascript:;" class="menu_row">
+						<img src="resources/images/student3.png" alt="student3" width="32" height="32" />
+						<span class="body">Hey, hope you do great tomorrow!</span>
+						<div class="clearer"></div>
+					</a>
+					<a href="javascript:;" class="view_all">View all</a>
+				</div>
+				<div id="student_tile" class="tile">
+					<div class="header">
+						<span class="photo"><a href="#"><img src="resources/images/student.jpeg" width="78" height="78" alt="Student's photo"></a></span>
+						<span class="name_wrap">
+							<div class="name font_style_500">Ayush<br />Kaushik</a></div>
+							<div class="name_link"><a href="#"><img src="resources/images/tile_profile.png" alt="Profile icon" width="13" height="12" />My Profile</a></div>
+							<div class="name_link"><a href="#"><img src="resources/images/tile_settings.png" alt="Reports icon" width="13" height="13" />My Reports</a></div>
+						</span>
+						<div class="clearer"></div>
+					</div>
+					<div class="info">
+						<a href="#">Sign out</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="errorcontainer"></div>
+	<div id="content_wrap">	</div>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			
+			// Header menus
+			$('#user_menus #messages').click(function() {
+				$('.tile').fadeOut('fast');
+				$('#messages_tile').fadeIn('fast');
+			});
+			
+			$('#user_menus #student').click(function() {
+				$('.tile').fadeOut('fast');
+				$('#student_tile').fadeIn('fast');
+			});
+			
+			$('html').click(function() {
+				$('.tile').fadeOut('fast');
+			});
+			
+			$('#user_menus #student, #user_menus #messages').click(function(event){
+				event.stopPropagation();
+			});
+		});
+	</script>
+
 </body>
 </html>
