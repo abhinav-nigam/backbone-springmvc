@@ -263,3 +263,238 @@ a:link, a:visited, a:hover, a:active {
 	color: #4c4c4c;
 	border-bottom: 1px solid #ccc;
 }
+
+#content_wrap {
+	width: 100%;
+}
+
+#content_wrap #content {
+	margin: 0 auto;
+	width: 940px;
+}
+
+#dashboard_sidebar {
+	padding: 0 10px;
+	width: 230px;
+	height: 100%;
+	color: #666;
+	background: #f7f7f7;
+	float: left;
+}
+
+#dashboard_sidebar.drawer {
+	position: fixed;
+	top: 60px;
+	left: -221px;
+	height: auto;
+	border-radius: 3px;
+	z-index: 20;
+}
+
+#dashboard_sidebar.hidden {
+	box-shadow: none;
+}
+
+#dashboard_sidebar #show_hide {
+	position: absolute;
+	top: 3px;
+	right: -34px;
+	width: 34px;
+	height: 38px;
+	background: url('../images/user_sidebar_show_hide_combo.png') no-repeat top left;
+	text-indent: -9999px;
+	line-height: 26px;
+	display: block;
+}
+
+#dashboard_sidebar #show_hide.visible {
+	background-position: 0 -38px !important;
+}
+
+#dashboard_sidebar #student {
+	margin: 10px 0;
+	width: 230px;
+	height: 100px;
+	
+}
+
+#student #student_photo {
+	width: 78px;
+	height: 78px;
+	float: left;
+	border: 1px solid #e86123;
+}
+
+#student #student_info {
+	position: relative;
+	margin-left: 6px;
+	width: 134px;
+	height: 60px;
+	font-size: 11px;
+	color: black;
+	float: left;
+}
+
+#student #student_info #student_name {
+	margin: 6px 0 0 0;
+	font-size: 16px;
+	line-height: 18px;
+}
+
+#student #student_info #classteacher {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+#student #student_info #classteacher #label {
+	position: absolute;
+	top: 0;
+	right: 34px;
+	font-size: 9px;
+}
+
+#student #student_info #classteacher #classteacher_link {
+	margin-left: 2px;
+	width: 28px;
+	height: 28px;
+	display: block;
+	border: 1px solid #e86123;
+}
+
+#student #student_info #classteacher_tile {
+	top: 38px;
+	left: 8px;
+}
+
+.tile {
+	position: absolute;
+	z-index: 10;
+	width: 290px;
+	text-shadow: none;
+	font-size: 11px;
+	color: black;
+	font-family: "Helvetica Neue", "Helvetica-Neue", "HelveticaNeue", Helvetica, Arial, Verdana, sans-serif;
+	text-transform: none;
+	background: white;
+	box-shadow: 0 1px 10px #b9b9b9;
+	box-shadow: 0 1px 10px rgba(0,0,0,.5);
+	display: none;
+}
+
+.tile .header {
+	padding: 10px;
+	font-family: 'MuseoSlab500';
+	font-weight: normal;
+	background: #ebebeb;
+}
+
+.tile .header .photo {
+	margin: 0;
+	width: auto;
+	height: auto;
+	box-shadow: none;
+	float: left;
+}
+
+.tile .header .name_wrap {
+	margin: 0 0 0 8px;
+	float: left;
+}
+
+.tile .header .name_wrap .name {
+	width: 160px;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 22px;
+	color: black;
+}
+
+.tile .header .name_wrap .name_link {
+	margin-bottom: 5px;
+}
+
+.tile .header .name_wrap .name_link img {
+	margin-right: 4px;
+	vertical-align: top !important;
+	float: none;
+}
+
+.tile .info {
+	padding: 10px;
+}
+
+.tile .info p {
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	color: #4c4c4c;
+	border-bottom: 1px solid #ccc;
+}
+
+.tile .info .contact_methods {
+	font-weight: bold;
+}
+
+.tile .info .contact_methods a{
+	margin-bottom: 8px;
+	float: left;
+	clear: left;
+}
+
+.tile .info .contact_methods a img {
+	margin-right: 6px;
+	vertical-align: top;
+}
+
+.tile .info .goals, .tile .info .tags {
+	margin-bottom: 5px;
+}
+
+.tile .info .goals span, .tile .info .tags span {
+	width: 50px;
+	font-size: 13px;
+	color: #c44408;
+	float: left;
+}
+
+.tile .info .goals ul, .tile .info .tags ul {
+	width: 180px;
+	float: left;
+}
+
+.tile a.menu_row {
+	padding: 10px;
+	font-size: 11px;
+	color: #8c8c8c;
+	background: white;
+	border-bottom: 1px solid #e0e0e0;
+	display: block;
+}
+
+.tile a.menu_row.even {
+	background: #f5f5f5;
+}
+
+.tile a.menu_row.unread  {
+	color: #383838;
+}
+
+.tile a.menu_row:hover {
+	color: white;
+	background: #eb4e05;
+}
+
+.tile a.menu_row img {
+	float: left;
+}
+
+.tile a.menu_row .body {
+	margin-left: 6px;
+	width: 230px;
+	float: left;
+}
+
+.tile .view_all {
+	padding: 5px 0 5px 10px;
+	display: block;
+}
