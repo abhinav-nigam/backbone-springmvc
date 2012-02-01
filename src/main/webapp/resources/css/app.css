@@ -498,3 +498,82 @@ a:link, a:visited, a:hover, a:active {
 	padding: 5px 0 5px 10px;
 	display: block;
 }
+
+.section_header_lg, .section_header_sm {
+	position: relative;
+	width: 100%;
+	text-transform: uppercase;
+	border-bottom: 1px solid #ccc;
+	float: left;
+}
+
+.section_header_lg span, .section_header_sm span{
+	position: absolute;
+	left: 4px;
+	padding: 0 4px;
+}
+
+.section_header_lg {
+	margin: 4px 0 16px 0;
+	font-size: 16px;
+	color: #666;
+}
+
+.section_header_lg span{
+	bottom: -10px;
+	background: white;
+}
+ 
+.section_header_sm {
+	margin: 10px 0 10px 0;
+	font-size: 11px;
+}
+
+.section_header_sm.top {
+	margin-top: 4px !important;
+}
+
+.section_header_sm span {
+	bottom: -8px;
+	background: #f7f7f7;
+}
+
+.section_sm {
+	margin-bottom: 20px;
+	padding-left: 3px;
+	font-size: 12px;
+	float: left;
+}
+
+.section_sm {
+	float: left;
+}
+
+.section_sm .activity_entry {
+	margin-bottom: 15px;
+	float: left;
+}
+
+.section_sm .activity_entry img {
+	margin-right: 6px;
+	border: 1px solid #ccc;
+	float: left;
+}
+
+.section_sm .activity_entry .desc{
+	width: 180px;
+	float: left;
+}
+
+.section_sm .activity_entry .desc a{
+	float: none;
+}
+
+.section_sm .activity_entry .datetime {
+	font-size: 10px;
+	color: #808080;
+}
+
+#activity_stream {
+	height: 400px;
+}
