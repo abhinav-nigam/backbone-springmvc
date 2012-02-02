@@ -278,7 +278,7 @@ a:link, a:visited, a:hover, a:active {
 	width: 230px;
 	height: 100%;
 	color: #666;
-	background: #f7f7f7;
+	background: white;
 	float: left;
 }
 
@@ -301,7 +301,6 @@ a:link, a:visited, a:hover, a:active {
 	right: -34px;
 	width: 34px;
 	height: 38px;
-	background: url('../images/user_sidebar_show_hide_combo.png') no-repeat top left;
 	text-indent: -9999px;
 	line-height: 26px;
 	display: block;
@@ -503,7 +502,7 @@ a:link, a:visited, a:hover, a:active {
 	position: relative;
 	width: 100%;
 	text-transform: uppercase;
-	border-bottom: 1px solid #ccc;
+	/* border-bottom: 1px solid #ccc; */
 	float: left;
 }
 
@@ -576,4 +575,116 @@ a:link, a:visited, a:hover, a:active {
 
 #activity_stream {
 	height: 400px;
+}
+#dashboard_content {
+	padding: 10px;
+	width: 660px;
+	float: left;
+	background: white;
+	height: 100%;
+	overflow: hidden;
+}
+
+#dashboard_content h1 {
+	margin-bottom: 10px;
+	padding: 20px 10px;
+	font-size: 24px;
+	border-bottom: 1px solid #ccc;
+}
+
+#student_reports {
+	/*padding-right: 10px;
+	border-right: 1px solid #CCC;*/
+	width: 475px;
+}
+
+#student_reports h2 img {
+	margin-right: 2px;
+}
+
+#student_reports h2 .app_key {
+	margin: -4px 0 0 10px;
+	font-size: 11px;
+	text-transform: uppercase;
+	color: #666;
+}
+
+#student_reports h2 .app_key img {
+	vertical-align: baseline;
+}
+
+#student_reports .desc {
+	width: 355px;
+}
+h2.boxy {
+	margin-bottom: 10px;
+	padding: 10px;
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 18px;
+	color: black;
+	background: #f2f2f2;
+}
+
+h2.boxy .header_link {
+	font-size: 12px;
+    float: right;
+}
+
+#reports_wrap {
+	margin-bottom: 30px;
+	border: 1px solid #e0e0e0;
+	background: #fafafa;
+	float: left;
+}
+
+#reports_wrap #reports_filters {	
+	position: relative;
+	z-index: 2;
+	float: left;
+}
+
+#reports_wrap #reports_filters a {
+	padding: 8px 15px 3px 15px;
+	height: 25px;
+	display: block;
+	float: left;
+}
+
+#reports_wrap #reports_filters a:hover {
+	background: #f2f2f2;
+}
+
+#reports_wrap #reports_filters a.active {
+	color: #4c4c4c;
+	background: url('../images/reports_filters_selected_arrow.png') no-repeat bottom center;
+}
+
+#reports_wrap #report_list {
+	position: relative;
+	margin-top: -1px;
+	padding: 10px 8px 0 8px;
+	min-height: 400px;
+	background: white;
+	float: left;
+	z-index: 1;
+	border-top: 1px solid #e0e0e0;
+}
+
+#reports_wrap #report_list .category {
+	margin-bottom: 20px;
+	float: left;
+}
+
+
+#reports_wrap #report_list h3 {
+	margin-bottom: 10px;
+	padding: 0 0 3px 2px;
+	font-size: 12px;
+	border-bottom: 1px solid #d4d4d4;
+}
+
+#reports_wrap #report_list .report {
+	margin: 0 10px 10px 3px;
+	float: left;
 }
