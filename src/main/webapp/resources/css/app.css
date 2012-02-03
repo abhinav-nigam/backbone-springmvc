@@ -502,7 +502,7 @@ a:link, a:visited, a:hover, a:active {
 	position: relative;
 	width: 100%;
 	text-transform: uppercase;
-	/* border-bottom: 1px solid #ccc; */
+	border-bottom: 1px solid #ccc;
 	float: left;
 }
 
@@ -546,6 +546,17 @@ a:link, a:visited, a:hover, a:active {
 
 .section_sm {
 	float: left;
+}
+
+.section_sm a.list{
+	color: #666;
+	clear: left;
+}
+
+.section_sm a.list img{
+	margin: 0 6px 6px 0;
+	vertical-align: middle;
+	border: 1px solid #ccc;
 }
 
 .section_sm .activity_entry {
@@ -593,8 +604,8 @@ a:link, a:visited, a:hover, a:active {
 }
 
 #student_reports {
-	/*padding-right: 10px;
-	border-right: 1px solid #CCC;*/
+/* 	padding-right: 10px;
+	border-right: 1px solid #CCC; */
 	width: 475px;
 }
 
@@ -688,3 +699,22 @@ h2.boxy .header_link {
 	margin: 0 10px 10px 3px;
 	float: left;
 }
+#col_narrow {
+	padding: 10px 0 0 10px;
+	width: 170px;
+	height: 100%;
+	color: #666;
+	float: right;
+}
+#col_narrow .section_header_sm span {
+	background: white;
+}
+
+.list_wrap {
+	width: 660px;
+	float: left;
+}
+
+
+
+
