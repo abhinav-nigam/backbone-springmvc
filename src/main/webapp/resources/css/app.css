@@ -310,21 +310,21 @@ a:link, a:visited, a:hover, a:active {
 	background-position: 0 -38px !important;
 }
 
-#dashboard_sidebar #student {
+#dashboard_sidebar #student_div {
 	margin: 10px 0;
 	width: 230px;
 	height: 100px;
 	
 }
 
-#student #student_photo {
+#student_div #student_photo {
 	width: 78px;
 	height: 78px;
 	float: left;
 	border: 1px solid #e86123;
 }
 
-#student #student_info {
+#student_div #student_info {
 	position: relative;
 	margin-left: 6px;
 	width: 134px;
@@ -334,26 +334,26 @@ a:link, a:visited, a:hover, a:active {
 	float: left;
 }
 
-#student #student_info #student_name {
+#student_div #student_info #student_name {
 	margin: 6px 0 0 0;
 	font-size: 16px;
 	line-height: 18px;
 }
 
-#student #student_info #classteacher {
+#student_div #student_info #classteacher {
 	position: absolute;
 	top: 0;
 	right: 0;
 }
 
-#student #student_info #classteacher #label {
+#student_div #student_info #classteacher #label {
 	position: absolute;
 	top: 0;
 	right: 34px;
 	font-size: 9px;
 }
 
-#student #student_info #classteacher #classteacher_link {
+#student_div #student_info #classteacher #classteacher_link {
 	margin-left: 2px;
 	width: 28px;
 	height: 28px;
@@ -361,7 +361,7 @@ a:link, a:visited, a:hover, a:active {
 	border: 1px solid #e86123;
 }
 
-#student #student_info #classteacher_tile {
+#student_div #student_info #classteacher_tile {
 	top: 38px;
 	left: 8px;
 }

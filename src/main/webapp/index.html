@@ -12,11 +12,12 @@
 	<script src="resources/js/lib/Jquery.Tmpl.js" type="text/javascript"></script>
 	<script src="resources/js/lib/Underscore.js" type="text/javascript"></script>
 	<script src="resources/js/lib/Backbone.js" type="text/javascript"></script>
-	
-	<script src="resources/js/config/com.skunkworks.ireportcards.Config.js" type="text/javascript"></script>
+
+ 	<script src="resources/js/config/com.skunkworks.ireportcards.Config.js" type="text/javascript"></script>
 	<script src="resources/js/utils/com.skunkworks.ireportcards.Utils.js" type="text/javascript"></script>
+	<script src="resources/js/models/com.skunkworks.ireportcards.models.Student.js" type="text/javascript"></script>
+	<script src="resources/js/views/com.skunkworks.ireportcards.views.Student.js" type="text/javascript"></script>
 	<script src="resources/js/controllers/com.skunkworks.ireportcards.controllers.HomeController.js" type="text/javascript"></script>
-	<script src="resources/js/views/com.skunkworks.ireportcards.views.StudentHome.js" type="text/javascript"></script>
 	
 	</head>
 	
@@ -84,6 +85,8 @@
 	<div id="content_wrap">
 		<div id="content">
 			<div id="dashboard_sidebar">
+				<div id="student_div">
+				</div>
 				<div class="section_header_sm">
 					<span>Latest Activity</span>
 				</div>
@@ -262,23 +265,6 @@
 			$('#user_menus #student, #user_menus #messages').click(function(event){
 				event.stopPropagation();
 			});
-			
-			//Sidebar tiles
-		    var classTeacherTile = {    
-				over: classTeacherOpen,
-				timeout: 100,
-				out: classTeacherClose
-			};
-		    
-		    function classTeacherOpen() {
-		        $('#class_teacher_tile').fadeIn('fast');
-		    }
-		 
-		    function classTeacherClose() {
-		        $('#class_teacher_tile').fadeOut('fast');
-		    }
-		    
-			$('#student_info #classteacher').hoverIntent(classTeacherTile);
 			
 	    	$('#report_list').children().hide();
 	    	$('#report_list #report1 .report').show();

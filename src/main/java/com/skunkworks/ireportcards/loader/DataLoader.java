@@ -188,7 +188,7 @@ public class DataLoader implements ApplicationListener<ContextRefreshedEvent>{
 		student1.setParent(parent1);
 		student1.setSubjects(subjects1);
 		student1.setUser(testUser1);
-		student1.setImage("/resources/images/student.jpeg");
+		student1.setImage("resources/images/student.jpeg");
 		
 		studentDao.save(student1);
 		

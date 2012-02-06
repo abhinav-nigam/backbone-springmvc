@@ -23,7 +23,6 @@
       // ensure the current root is now the current object       
       root = root[parts[i]];
     }
-    
     return root;
   };
 })( jQuery );

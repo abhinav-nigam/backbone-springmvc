@@ -1,7 +1,5 @@
 (function() {
 
-	$.ns("com.skunkworks.ireportcards.Config", Config);
-
 	/**
 	 * Config class, which will have application level variables.
 	 * 
@@ -10,8 +8,9 @@
 	 * @name com.skunkworks.ireportcards.Config
 	 */
 	function Config() {
-		this.templatesUrl = "js/views/templates/";
+		this.templatesUrl = "resources/js/views/templates/";
 		this.root = "/ireportcards/";
 		this.baseUrl = this.root + "data/";
 	}
+	$.ns("com.skunkworks.ireportcards.Config", Config);
 })();

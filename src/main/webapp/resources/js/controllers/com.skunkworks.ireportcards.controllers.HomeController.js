@@ -21,5 +21,6 @@
 			});
 		}
 	});
+	
 	$.ns("com.skunkworks.ireportcards.controllers.HomeController", HomeController);				
 });
