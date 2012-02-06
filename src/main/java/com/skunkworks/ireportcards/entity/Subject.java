@@ -101,7 +101,7 @@ public class Subject {
 	@Override
 	public String toString() {
 		return "Subject [id=" + id + ", subjectTemplate=" + subjectTemplate
-				+ ", attendance=" + attendance + ", terminals=" + terminals
+				+ ", attendance=" + attendance
 				+ ", marksForAttendance=" + marksForAttendance
 				+ ", marksForPracticals=" + marksForPracticals
 				+ ", marksForAssignment=" + marksForAssignment

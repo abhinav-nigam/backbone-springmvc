@@ -27,6 +27,7 @@ http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
         
 		<property name="annotatedClasses">
 			<list>
+				<value>com.skunkworks.ireportcards.entity.User</value>
 				<value>com.skunkworks.ireportcards.entity.Level</value>
 				<value>com.skunkworks.ireportcards.entity.Parent</value>
 				<value>com.skunkworks.ireportcards.entity.School</value>
@@ -40,4 +41,14 @@ http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
 			</list>
 		</property> 
     </bean>
+    
+   	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+
+	<bean id="hibernateTemplate"
+		class="org.springframework.orm.hibernate3.HibernateTemplate">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
 </beans>

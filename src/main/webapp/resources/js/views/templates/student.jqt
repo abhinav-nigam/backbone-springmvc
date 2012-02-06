@@ -1,0 +1,34 @@
+<script id="studentTemplate" type="text/x-jquery-tmpl">
+	<div id="student">
+		<a href="#" id="student_photo"><img src="resources/images/student.jpeg" width="78" height="78" alt="Ayush's photo"></a>
+		<div id="student_info">
+			<div id="student_name">Ayush<br />Kaushik</div>
+			11 A<br/>
+			<a href="#">view profile</a>
+			<div id="classteacher">
+				<a href="javascript:;" id="classteacher_link"><img src="resources/images/teacher1.jpg" alt="Teacher's photo" width="28" height="28" /></a>
+				<div id="label">Class Teacher</div>
+				<div id="class_teacher_tile" class="tile">
+				<div class="arrow_top_left"></div>
+				<div class="header">
+					<span class="photo"><a href="#"><img src="resources/images/teacher1.jpg" width="58" height="58" alt="Teacher's photo"></a></span>
+					<span class="name_wrap">
+						<div class="name">George<br />Mennon</div>
+						<div class="name_link"><a href="#">view profile</a></div>
+					</span>
+					<div class="clearer"></div>
+				</div>
+				<div class="info">
+					<p>Hi I’m your Class Teacher. Email or call me if you would like to chat.</p>
+					<div class="contact_methods">
+						<a href="javascript:;"><img src="resources/images/tile_email.png" alt="Send email" width="17" height="13" />Send email</a>
+						<a href="javascript:;"><img src="resources/images/tile_skype.png" alt="Send Skype message" width="17" height="15" />Send Skype message</a>
+						<div class="clearer"></div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="clearer"></div>
+	</div>
+</script>
