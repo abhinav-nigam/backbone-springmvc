@@ -1,4 +1,13 @@
 (function() {
+/* var StudentModel = Backbone.Model.extend({
+      initialize: function() {
+         this.bind("error", function(model, error){
+            console.log(error,' in ',model);
+         });
+      }
+   });
+   $.ns("com.skunkworks.ireportcards.models.Student", StudentModel);*/
+	
 	var HomeController = Backbone.Router.extend({
 		utils: new com.skunkworks.ireportcards.Utils(),
 		config: new com.skunkworks.ireportcards.Config(),
@@ -21,6 +30,5 @@
 			});
 		}
 	});
-	
-	$.ns("com.skunkworks.ireportcards.controllers.HomeController", HomeController);				
-});
+	$.ns("com.skunkworks.ireportcards.controllers.HomeController", HomeController);
+})();
