@@ -13,7 +13,9 @@ public class Teacher {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Integer id;
 	
-	private String name;
+	private String firstName;
+	
+	private String lastName;
 	
 	private String emailId;
 	
@@ -21,6 +23,16 @@ public class Teacher {
 	
 	@OneToOne
 	private User user;
+
+	private String image;
+	
+	public String getImage() {
+		return image;
+	}
+
+	public void setImage(String image) {
+		this.image = image;
+	}
 
 	public User getUser() {
 		return user;
@@ -36,14 +48,6 @@ public class Teacher {
 
 	public void setId(Integer id) {
 		this.id = id;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
 	}
 
 	public String getEmailId() {
@@ -62,9 +66,20 @@ public class Teacher {
 		this.phoneNo = phoneNo;
 	}
 
-	@Override
-	public String toString() {
-		return "Teacher [id=" + id + ", name=" + name + ", emailId=" + emailId
-				+ ", phoneNo=" + phoneNo + "]";
+	public String getFirstName() {
+		return firstName;
 	}
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
 }

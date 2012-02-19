@@ -94,9 +94,11 @@ public class DataLoader implements ApplicationListener<ContextRefreshedEvent>{
 		parentDao.save(parent1);
 		
 		Teacher teacher1 = new Teacher();
-		teacher1.setName("Virendar Sehwag");
+		teacher1.setFirstName("Virendar");
+		teacher1.setLastName("Sehwag");
 		teacher1.setEmailId("virendar.sehwag@gmail.com");
 		teacher1.setPhoneNo(Long.parseLong("9886588487"));
+		teacher1.setImage("resources/images/teacher1.jpg");
 		teacher1.setUser(testUser3);
 		
 		teacherDao.save(teacher1);

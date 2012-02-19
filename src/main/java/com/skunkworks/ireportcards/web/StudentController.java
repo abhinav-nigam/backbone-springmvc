@@ -32,6 +32,7 @@ public class StudentController {
 		studentDTO.setSection(student.getSection().getName());
 		studentDTO.setLevel(student.getLevel().getName());
 		studentDTO.setImage(student.getImage());
+		studentDTO.setClassTeacher(student.getSection().getClassTeacher());
 		return studentDTO;
 	}
 }

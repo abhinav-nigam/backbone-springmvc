@@ -5,14 +5,14 @@
 		${level} ${section}<br/>
 		<a href="#">view profile</a>
 		<div id="classteacher">
-			<a href="javascript:;" id="classteacher_link"><img src="resources/images/teacher1.jpg" alt="Teacher's photo" width="28" height="28" /></a>
+			<a href="javascript:;" id="classteacher_link"><img src="${classTeacher.image}" alt="Teacher's photo" width="28" height="28" /></a>
 			<div id="label">Class Teacher</div>
 			<div id="class_teacher_tile" class="tile">
 			<div class="arrow_top_left"></div>
 			<div class="header">
-				<span class="photo"><a href="#"><img src="resources/images/teacher1.jpg" width="58" height="58" alt="Teacher's photo"></a></span>
+				<span class="photo"><a href="#"><img src="${classTeacher.image}" width="58" height="58" alt="Class Teacher"></a></span>
 				<span class="name_wrap">
-					<div class="name">George<br />Mennon</div>
+					<div class="name">${classTeacher.firstName}<br />${classTeacher.lastName}</div>
 					<div class="name_link"><a href="#">view profile</a></div>
 				</span>
 				<div class="clearer"></div>
